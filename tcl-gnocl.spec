@@ -22,7 +22,7 @@ URL:            https://sourceforge.net/projects/gnocl
 Source0:        %packagename-%version.tar.gz
 
 %description
-Gnocl is a GTK+ / Gnome extension for the programming language Tcl.
+Gnocl is a GTK+/Gnome extension for the programming language Tcl.
     
 %prep
 %setup -q -n %{packagename}-%{version}
