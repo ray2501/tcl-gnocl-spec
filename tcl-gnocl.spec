@@ -8,7 +8,7 @@ Name:           tcl-gnocl
 BuildRequires:  gcc
 BuildRequires:  make
 BuildRequires:  pkg-config
-BuildRequires:  tcl-devel
+BuildRequires:  tcl-devel >= 8.4
 BuildRequires:  libglade2-devel
 BuildRequires:  libnotify-devel
 BuildRequires:  glib2-devel >= 2.24
