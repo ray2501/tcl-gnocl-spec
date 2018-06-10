@@ -2,12 +2,13 @@
 
 set arch "x86_64"
 set base "gnocl-0.9.96_050618"
-set fileurl "https://sourceforge.net/projects/gnocl/files/Gnocl-Nightly-Build/gnocl-0.9.96-05-06-18.tar.bz2"
+set filename "gnocl-0.9.96-05-06-18.tar.bz2"
+set fileurl "https://sourceforge.net/projects/gnocl/files/Gnocl-Nightly-Build/$filename"
 
-set var [list wget $fileurl -O gnocl-0.9.96-05-06-18.tar.bz2]
+set var [list wget $fileurl -O $filename]
 exec >@stdout 2>@stderr {*}$var
 
-set var [list tar xjvf gnocl-0.9.96-05-06-18.tar.bz2]
+set var [list tar xjvf $filename]
 exec >@stdout 2>@stderr {*}$var
 
 file copy gnocl-0.9.96/src/includes/gnocl.h gnocl-0.9.96/src/gnocl.h
@@ -25,7 +26,7 @@ set var [list tar czvf $base.tar.gz $base]
 exec >@stdout 2>@stderr {*}$var
 
 # Remove old file
-file delete -force gnocl-0.9.96-05-06-18.tar.bz2
+file delete -force $filename
 
 if {[file exists build]} {
     file delete -force build
