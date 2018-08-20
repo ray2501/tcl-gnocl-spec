@@ -1,0 +1,19 @@
+--- src/toplevels/assistant.c	2018-08-20 22:18:18.118488815 +0800
++++ src/toplevels/assistant.c	2018-08-20 22:18:37.106502959 +0800
+@@ -834,6 +834,7 @@
+ 				GtkWidget *page;
+ 				gint n, idx;
+ 				int pageNo;
++				int i;
+ 
+ 				/*
+ 				GTK_ASSISTANT_PAGE_CONTENT, GTK_ASSISTANT_PAGE_INTRO,
+@@ -888,7 +889,7 @@
+ 				}
+ 
+ 				/* do page settings */
+-				for ( int i = 3 ; i < objc ; i += 2 ) {
++				for ( i = 3 ; i < objc ; i += 2 ) {
+ 					//g_printf( "item = %s ; val = %s\n", Tcl_GetString ( objv[i] ), Tcl_GetString ( objv[i+1] ) );
+ 
+ 					if ( strcmp ( Tcl_GetString ( objv[i] ), "-title" ) ) {

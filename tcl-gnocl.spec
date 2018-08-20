@@ -20,12 +20,14 @@ Group:          Development/Languages/Tcl
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 URL:            https://sourceforge.net/projects/gnocl
 Source0:        %packagename-%version.tar.gz
+Patch0:         assistant.c.patch
 
 %description
 Gnocl is a GTK+/Gnome extension for the programming language Tcl.
     
 %prep
 %setup -q -n %{packagename}-%{version}
+%patch0
 
 %build
 cd src
