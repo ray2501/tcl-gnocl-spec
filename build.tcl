@@ -16,6 +16,7 @@ file copy gnocl-0.9.96/src/includes/gnocl.h gnocl-0.9.96/src/gnocl.h
 set curDir [pwd]
 
 cd gnocl-0.9.96/src
+file delete -force documentation
 set var [list make clean]
 exec >@stdout 2>@stderr {*}$var
 cd $curDir
