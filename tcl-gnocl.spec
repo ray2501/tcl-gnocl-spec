@@ -12,7 +12,7 @@ BuildRequires:  tcl-devel >= 8.4
 BuildRequires:  libglade2-devel
 BuildRequires:  libnotify-devel
 BuildRequires:  glib2-devel >= 2.24
-Version:        0.9.96_140719
+Version:        0.9.96_251019
 Release:        0
 Summary:        GTK+/Gnome extension for Tcl
 License:        BSD
