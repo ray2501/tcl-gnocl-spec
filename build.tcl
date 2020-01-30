@@ -1,8 +1,8 @@
 #!/usr/bin/tclsh
 
 set arch "x86_64"
-set base "gnocl-0.9.96_251019"
-set filename "gnocl-0.9.96-25-10-19.tar.bz2"
+set base "gnocl-0.9.96_260120"
+set filename "gnocl-0.9.96-26-01-20.tar.bz2"
 set fileurl "https://sourceforge.net/projects/gnocl/files/Gnocl-Nightly-Build/$filename"
 
 set var [list wget $fileurl -O $filename]
@@ -35,7 +35,6 @@ if {[file exists build]} {
 
 file mkdir build/BUILD build/RPMS build/SOURCES build/SPECS build/SRPMS
 file copy -force $base.tar.gz build/SOURCES
-file copy -force assistant.c.patch build/SOURCES
 
 set buildit [list rpmbuild --target $arch --define "_topdir [pwd]/build" -bb tcl-gnocl.spec]
 exec >@stdout 2>@stderr {*}$buildit

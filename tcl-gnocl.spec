@@ -12,7 +12,7 @@ BuildRequires:  tcl-devel >= 8.4
 BuildRequires:  libglade2-devel
 BuildRequires:  libnotify-devel
 BuildRequires:  glib2-devel >= 2.24
-Version:        0.9.96_251019
+Version:        0.9.96_260120
 Release:        0
 Summary:        GTK+/Gnome extension for Tcl
 License:        BSD
@@ -20,14 +20,12 @@ Group:          Development/Languages/Tcl
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 URL:            https://sourceforge.net/projects/gnocl
 Source0:        %packagename-%version.tar.gz
-Patch0:         assistant.c.patch
 
 %description
 Gnocl is a GTK+/Gnome extension for the programming language Tcl.
     
 %prep
 %setup -q -n %{packagename}-%{version}
-%patch0
 
 %build
 cd src
