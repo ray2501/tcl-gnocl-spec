@@ -1,8 +1,8 @@
 #!/usr/bin/tclsh
 
 set arch "x86_64"
-set base "gnocl-0.9.96_070320"
-set filename "gnocl-0.9.96-07-03-20.tar.bz2"
+set base "gnocl-0.9.96_040520"
+set filename "gnocl-0.9.96-04-05-20.tar.bz2"
 set fileurl "https://sourceforge.net/projects/gnocl/files/Gnocl-Nightly-Build/$filename"
 
 set var [list wget $fileurl -O $filename]
