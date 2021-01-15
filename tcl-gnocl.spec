@@ -15,7 +15,7 @@ BuildRequires:  glib2-devel >= 2.24
 Version:        0.9.96_040520
 Release:        0
 Summary:        GTK+/Gnome extension for Tcl
-License:        BSD
+License:        BSD-3-Clause
 Group:          Development/Languages/Tcl
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 URL:            https://sourceforge.net/projects/gnocl
